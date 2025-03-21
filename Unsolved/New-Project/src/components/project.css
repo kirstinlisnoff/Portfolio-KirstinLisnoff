@@ -1,0 +1,51 @@
+/* src/components/Project.css */
+:root {
+    --pale-purple: #f3e0ec;
+    --grey-purple: #d5b6cf;
+    --mauve: #f2befc;
+    --wisteria: #ca9ce1;
+    --violet: #685f74;
+}
+
+.project {
+    background-color: var(--pale-purple);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--violet);
+  }
+  
+  .project-links {
+    margin-top: 1rem;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--wisteria);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .project-link:hover {
+    background-color: var(--mauve);
+  }
+  

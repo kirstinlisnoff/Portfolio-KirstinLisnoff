@@ -1,4 +1,5 @@
 import Project from '../components/project';
+import './portfolio.css'
 
 function Portfolio() {
   return (
@@ -7,20 +8,12 @@ function Portfolio() {
       
       <div className="portfolio-projects">
         <Project 
-          title="Project 1"
-          image='/Users/kirstinnoff/Desktop/repositories/github/HW12-React/Unsolved/New-Project/public/flightplan.png' // Replace with your image link
-          deployedLink="https://your-deployed-app-link.com"
-          githubLink="https://github.com/your-username/project1"
+          title="Flightplan Travel Planner"
+          image="flightplan.png"
+          deployedLink="https://p1t1-akcj.github.io/ProjectOne/"
+          githubLink="https://github.com/P1T1-AKCJ/ProjectOne.git"
         />
-        
-        <Project 
-          title="Project 2"
-          image="https://via.placeholder.com/400" // Replace with your image link
-          deployedLink="https://your-deployed-app-link.com"
-          githubLink="https://github.com/your-username/project2"
-        />
-        
-        {/* Add more projects as needed */}
+     
       </div>
     </div>
   );
