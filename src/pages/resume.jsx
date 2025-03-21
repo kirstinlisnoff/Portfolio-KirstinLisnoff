@@ -9,7 +9,7 @@ function Resume() {
       <div className="resume-download">
         <p>Download my resume here:</p>
         <a 
-          href="/Resume.pdf" // Update with the correct path to your resume file
+          href="dist/Resume.pdf" // Update with the correct path to your resume file
           download="Kirstin_Lisnoff_Resume.pdf"
           className="resume-button"
         >
