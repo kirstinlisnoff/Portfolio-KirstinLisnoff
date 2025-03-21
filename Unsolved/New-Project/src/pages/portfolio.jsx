@@ -2,8 +2,8 @@
 function Portfolio() {
     return (
         <section>
-            <h2>About Me</h2>
-            <p>hellooooo</p>
+            <h2>My Works</h2>
+            <p>Here are some of my projects:</p>
         </section>
     );
 }

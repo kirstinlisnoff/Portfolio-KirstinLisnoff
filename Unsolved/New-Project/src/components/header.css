@@ -1,0 +1,14 @@
+:root {
+    --pale-purple: #f3e0ec;
+    --grey-purple: #ead5e6;
+    --mauve: #f2befc;
+    --wisteria: #ca9ce1;
+    --violet: #685f74;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-purple);
+}
