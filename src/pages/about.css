@@ -10,6 +10,14 @@
     min-height: 100vh;
 } */
 
+:root {
+  --pale-purple: #f3e0ec;
+  --grey-purple: #d5b6cf;
+  --mauve: #f2befc;
+  --wisteria: #ca9ce1;
+  --violet: #685f74;
+}
+
 .about-content {
     display: flex;
   flex-direction: row;
@@ -17,7 +25,8 @@
 }
 
 .about h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 1rem;
     padding: 20px;
 }
@@ -26,6 +35,10 @@
     font-size: 2rem;
     line-height: 1.5;
     text-align: left;
+    background-color: rgba(243, 230, 250, 0.494);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+    border-radius: 10%;
+    padding: 20px 40px;
 }
 
 .about-img {
@@ -33,6 +46,8 @@
     height: auto;
     object-fit: cover;
     margin-right: 10pc;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
 }
 
 
