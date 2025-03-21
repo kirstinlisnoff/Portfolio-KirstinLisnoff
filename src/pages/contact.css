@@ -8,16 +8,17 @@
 }
 /* Overall section styling */
 .contact {
-    padding: 4rem 20rem;
+    padding: 4rem 10rem;
     text-align: center;
     background-color: var(--pale-purple);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Heading styling */
 .contact h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Form styling */
@@ -76,13 +77,26 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .contact-form {
-        padding: 1.5rem;
+    .contact {
+        padding: 2rem; /* Reduce padding */
     }
 
-    .contact-form input, 
+    .contact-form {
+        max-width: 100%; /* Prevent form from being too wide */
+        padding: 2rem;
+    }
+
+    .contact-form input,
     .contact-form textarea {
         font-size: 1rem;
+        padding: 0.8rem; /* Adjust padding to fit in the form */
+        width: 100%; /* Ensure inputs take full width of their container */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .contact-form textarea {
+        resize: vertical; /* Allow textarea resizing */
+        min-height: 120px; /* Set a minimum height */
     }
 
     .contact-form button {
@@ -90,3 +104,5 @@
         padding: 1rem 1.5rem;
     }
 }
+
+
