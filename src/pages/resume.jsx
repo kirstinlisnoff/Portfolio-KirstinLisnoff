@@ -1,4 +1,4 @@
-import './Resume.css'; // Import styles
+import './resume.css'; // Import styles
 
 function Resume() {
   return (

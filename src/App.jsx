@@ -9,6 +9,8 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Portfolio from './pages/portfolio'
 import Resume from './pages/resume'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
   function App() {
   return (
