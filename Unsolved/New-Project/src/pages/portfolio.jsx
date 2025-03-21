@@ -8,7 +8,7 @@ function Portfolio() {
       <div className="portfolio-projects">
         <Project 
           title="Project 1"
-          image="https://via.placeholder.com/400" // Replace with your image link
+          image='/Users/kirstinnoff/Desktop/repositories/github/HW12-React/Unsolved/New-Project/public/flightplan.png' // Replace with your image link
           deployedLink="https://your-deployed-app-link.com"
           githubLink="https://github.com/your-username/project1"
         />
