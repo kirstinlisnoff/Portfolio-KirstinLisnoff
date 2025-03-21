@@ -7,8 +7,39 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--grey-purple);
-}
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social-links {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color:var(--mauve);
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .social-links a {
+      font-size: 1.5rem;
+    }
+  }

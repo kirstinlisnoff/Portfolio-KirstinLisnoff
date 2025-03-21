@@ -1,7 +1,64 @@
 
-.about-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+/* .about {
+    text-align: left;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+} */
+
+.about-content {
+    display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5em;
 }
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+}
+
+.about p {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.about-img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10pc;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .about {
+      flex-direction: column; /* Stack content vertically on small screens */
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      min-height: 100vh; /* Make sure the container takes full height */
+      text-align: center; /* Center text */
+      padding: 2rem;
+    }
+  
+    .about-img {
+      width: 150px; /* Make the image smaller on mobile */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 1rem; /* Add space between image and text */
+    }
+  
+    .about h2 {
+      font-size: 2rem; /* Adjust heading size for mobile */
+    }
+  
+    .about p {
+      font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+  }

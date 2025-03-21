@@ -1,10 +1,14 @@
+
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
     --pale-purple: #f3e0ec;
-    --grey-purple: #ead5e6;
+    --grey-purple: #d4b8cf;
     --mauve: #f2befc;
     --wisteria: #ca9ce1;
     --violet: #685f74;
