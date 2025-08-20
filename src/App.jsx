@@ -10,6 +10,7 @@ import Contact from './pages/contact'
 import Portfolio from './pages/portfolio'
 import Resume from './pages/resume'
 import Home from './pages/home'
+import Skills from './pages/skills'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -42,6 +43,9 @@ function App() {
         </section>
          <section id="about">
           <About />
+        </section>
+        <section id="skills">
+          <Skills />
         </section>
 
         <section id="portfolio">
