@@ -1,8 +1,11 @@
 
+
+import './skills.css';
+
 function Skills () {
     return (
         <div className="skills">
-        <h2>Skills & Technologies</h2>
+        <h2>skills & technologies</h2>
         <ul>
             <li>JavaScript</li>
             <li>TypeScript</li>

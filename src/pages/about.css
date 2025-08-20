@@ -31,8 +31,8 @@
     padding: 20px;
 }
 
-.about p {
-    font-size: 2rem;
+.about-text {
+    font-size: 20px;
     line-height: 1.5;
     text-align: left;
     background-color: rgba(243, 230, 250, 0.494);
