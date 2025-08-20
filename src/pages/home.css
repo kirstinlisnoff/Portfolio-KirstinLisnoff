@@ -1,0 +1,16 @@
+.HomeContent {
+    margin-top: 5rem;
+}
+
+.HomeContent h2 {
+    color: var(--color-900);
+    font-size: 40px;
+    margin-left: 3rem;
+}
+
+.HomeContent p {
+    color: var(--color-800);
+    font-size: 30px;
+    margin-left: 1rem;
+    margin-right: 40rem;
+}
