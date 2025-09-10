@@ -12,10 +12,9 @@
     padding: 5rem;
   }
 
-  .resume h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .resume h1 {
+     font-size: 20px;
+     margin: 0;
   }
   
   .resume-download {

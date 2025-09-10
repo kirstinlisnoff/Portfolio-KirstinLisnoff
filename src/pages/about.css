@@ -18,6 +18,10 @@
   --violet: #685f74;
 }
 
+.about {
+  padding-top: 6rem;
+}
+
 .about-content {
   display: flex;
   flex-direction: row;
@@ -42,17 +46,17 @@
     margin-right: 2rem;
 }
 .about-text {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     text-align: left;
     padding: 20px 40px;
 }
 
 .about-img {
-    width: 500px;
+    width: 400px;
     height: auto;
     object-fit: cover;
-    /* margin-right: 3rem; */
+    margin-right: 3rem;
     border-radius: 15%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 1;

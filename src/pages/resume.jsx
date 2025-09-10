@@ -3,7 +3,7 @@ import './resume.css'; // Import styles
 function Resume() {
   return (
     <div className="resume">
-      <h2>Resume</h2>
+      <h1>resume</h1>
 
      
       <div className="resume-download">

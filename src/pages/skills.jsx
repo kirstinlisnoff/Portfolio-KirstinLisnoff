@@ -5,6 +5,7 @@ import './skills.css';
 function Skills () {
     return (
         <div className="skills">
+        <h1>skills</h1>
         <h2>skills & technologies</h2>
         <ul>
             <li>

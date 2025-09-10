@@ -8,23 +8,19 @@
 }
 /* Overall section styling */
 .contact {
-    padding: 4rem 10rem;
+    padding: 6rem 10rem;
     text-align: center;
-    background-color: var(--pale-purple);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Heading styling */
-.contact h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.contact h1 {
+    font-size: 20px;
 }
 
 /* Form styling */
 .contact-form {
-    max-width: 900px;
-    margin: auto;
+    max-width: 800px;
     background-color: var(--wisteria);
     padding: 2rem 5rem;
     border-radius: 8px;
@@ -33,7 +29,9 @@
 
 .contact-form .form-content {
     margin-bottom: 1.5rem;
+    align-items: center;
     text-align: left;
+    vertical-align: top;
 }
 
 .contact-form label {
@@ -50,6 +48,7 @@
     width: 100%;
     padding: 1rem;
     border: 1px solid #ddd;
+    box-sizing: border-box;
     border-radius: 8px;
     font-size: 1rem;
 }
@@ -57,7 +56,15 @@
 .contact-form textarea {
     resize: vertical;
     min-height: 150px;
+    font-family: inherit;
+    margin-bottom: 1rem;
 }
+
+
+
+
+
+
 
 /* Button styling */
 .contact-form button {

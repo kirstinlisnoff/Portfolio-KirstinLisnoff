@@ -3,21 +3,19 @@ import "./contact.css"
 function Contact() {
     return (
         <section className="contact">
-            <h2>Contact Me</h2>
+            <h1>contact</h1>
+            <h2>I'd love to hear from you! Fill out the form below to reach out.</h2>
             <form className="contact-form">
                 <div className="form-content">
-                <label>Name:</label>
-                <input type="text" required />
+                <input type="text" placeholder="Name" required />
                 </div>
                 <div className="form-content">
-                <label>Email:</label>
-                <input type="email" required />
+                <input type="email" placeholder="Email" required />
                 </div>
-                <div className="form-content">
-                <label>Message:</label>
-                <input type="text" required />
+                <div className="form-message">
+                <textarea placeholder="Message" required />
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Get in touch</button>
                 
             </form>
         </section>
