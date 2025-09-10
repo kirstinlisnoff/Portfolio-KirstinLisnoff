@@ -17,21 +17,6 @@ function Resume() {
         </a>
       </div>
 
-    
-      <div className="resume-skills">
-        <h3>Skills & Technologies</h3>
-        <ul>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React.js</li>
-          <li>HTML & CSS</li>
-          <li>Node.js</li>
-          <li>PostgreSQL</li>
-          <li>Git & GitHub</li>
-          <li>Web APIs</li>
-          <li>Responsive Web Design</li>
-        </ul>
-      </div>
     </div>
   );
 }

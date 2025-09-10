@@ -1,4 +1,4 @@
-/* src/components/Project.css */
+/* src/components/Project.css
 :root {
     --pale-purple: #f3e0ec;
     --grey-purple: #d5b6cf;
@@ -48,4 +48,41 @@
   .project-link:hover {
     background-color: var(--mauve);
   }
+   */
+
+
+.project {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.project-description {
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+
+.project-img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--wisteria);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
   
+  .project-link:hover {
+    background-color: var(--mauve);
+  }
+

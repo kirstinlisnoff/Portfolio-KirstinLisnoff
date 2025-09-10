@@ -2,6 +2,11 @@
   padding: 2rem;
 }
 
+.skills h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
 .skills h2 {
   margin-bottom: 1rem;
 }

@@ -7,7 +7,9 @@ function Skills () {
         <div className="skills">
         <h2>skills & technologies</h2>
         <ul>
-            <li>JavaScript</li>
+            <li>
+                <img src="/jsicon.png" alt="JavaScript" className="skill-icon" />
+            </li>
             <li>TypeScript</li>
             <li>React.js</li>
             <li>HTML & CSS</li>
