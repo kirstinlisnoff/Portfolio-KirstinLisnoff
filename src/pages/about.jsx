@@ -4,7 +4,7 @@ function About() {
     return (
         <section className="about">
             <h1>about</h1>
-            <h2>Get to Know Kirstin!</h2>
+            <h2>Get to know me!</h2>
             <div className="about-content">
               <div className='about-left'>
                 <img src="/avatar.jpg" alt="Kirstin Lisnoff" className="about-img"/>
@@ -25,8 +25,8 @@ function About() {
               </div>
             <div className="about-text">
                 <p>I am a passionate, curiosity-driven web developer looking to expand my knowlege. I strive to write clean code and utilize creative thinking to navigate problem-solving.</p>
-                <p>I have a BA in Mathematics from Binghamton University. Studying complex number theory and breaking down multivariable differential equations has allowed me to tackle programming challenges with a unique perspective. I also completed a minor in Spanish during undergrad. Languages, whether in terms of code or linguistics, have always peaked my interest.  </p>
-                <p>Post-grad I recieved a certification for completing the Columbia Engineering Coding Boot Camp, which is where I learned to code!</p>
+                <p>I have a <strong>BA in Mathematics from Binghamton University</strong>. Studying complex number theory and breaking down multivariable differential equations has allowed me to tackle programming challenges with a unique perspective. Languages of all forms have always peaked my interest, as I also minored in Spanish.  </p>
+                <p>Post-grad I recieved a <strong>certification for completing the Columbia Engineering Coding Boot Camp</strong>, which is where I learned to code!</p>
           </div>
           </div>
           

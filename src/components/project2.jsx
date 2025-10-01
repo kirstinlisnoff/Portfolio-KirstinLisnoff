@@ -1,6 +1,6 @@
 import './project.css'
 
- function ProjectLeft({ title, image, description, deployedLink, githubLink }) {
+ function ProjectLeft({ title, image, description, githubLink }) {
     return (
       <div className="project">
         <img src={image} alt={title} className="project-img" />
@@ -8,9 +8,9 @@ import './project.css'
         <h3 className="project-title">{title}</h3>
         <p className="description">{description}</p>
         <div className="project-links">
-          <a href={deployedLink} target="_blank" rel="noopener noreferrer" className="project-link">
+          {/* <a href={deployedLink} target="_blank" rel="noopener noreferrer" className="project-link">
             View Deployed App
-          </a>
+          </a> */}
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
             View GitHub Repo
           </a>

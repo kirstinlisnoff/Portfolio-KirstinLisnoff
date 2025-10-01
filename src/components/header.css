@@ -1,10 +1,4 @@
-:root {
-    --pale-purple: #f3e0ec;
-    --grey-purple: #d5b6cf;
-    --mauve: #f2befc;
-    --wisteria: #ca9ce1;
-    --violet: #685f74;
-}
+
 
 .header {
     position: fixed;
@@ -14,8 +8,8 @@
     display: flex;
     flex-direction: column; 
     align-items: center;
-    background-color: var(--pale-purple);
-    padding: 15px;
+    background-color: #45839cc1;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(39, 39, 39, 0.2);
     z-index: 1000;
     box-sizing: border-box;
@@ -36,21 +30,36 @@ nav {
 
 nav ul {
   list-style: none;
+  color: white;
   display: flex;
   gap: 3rem;
-  margin-bottom: 0;
-  margin-top: 0.5rem;
-  padding: 0;
+  margin: 0;
+  padding: 10px;
 }
 
-nav a.active {
-    color: var(--wisteria);
-    font-weight: bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
-nav a :hover {
-    color: var(--mauve);
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;          /* sits right below the text */
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  transition: width 0.3s ease;
 }
+
+nav a:hover::after {
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
     .header {

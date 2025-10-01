@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Header from './components/header'
+// import Header from './components/header'
 import Footer from './components/footer'
 import About from './pages/about'
 import Contact from './pages/contact'
@@ -36,7 +36,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return ( 
     <div className='app'>
-      <Header />
+      {/* <Header /> */}
       <main>
         <section id="home">
           <Home />

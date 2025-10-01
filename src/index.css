@@ -1,48 +1,59 @@
 
 
 
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-    --pale-purple: #f3e0ec;
-    --grey-purple: #d5b6cf;
-    --mauve: #f2befc;
-    --wisteria: #ca9ce1;
-    --violet: #685f74;
+
+    --blue: #70D6FF;
+    --dark: #192F39;
+    --purple: #DC8ABD;
+    --pink: #FF70A6;
+    --orange: #FF9770;
+    --yellow: #FFD670;
+    --neon: #E9FF70
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
+
+.alegreya {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--grey-purple);
-  color: var(--violet);
+  
 }
 
 a {
   font-weight: 500;
-  color: var(--violet);
   text-decoration: inherit;
-}
-a:hover {
-  color: var(--wisteria);
-  text-decoration: underline;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  color: var(--dark);
+  background-color: var(--blue);
 }
 
 h1 {
@@ -57,14 +68,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--violet);
-  color: var(--grey-purple);
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: var(--wisteria);
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

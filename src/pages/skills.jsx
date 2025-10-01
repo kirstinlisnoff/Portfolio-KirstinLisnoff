@@ -6,7 +6,7 @@ function Skills () {
     return (
         <div className="skills">
         <h1>skills</h1>
-        <h2>skills & technologies</h2>
+        <h2>Here are the tools and technologies I work with to bring ideas to life.</h2>
         <ul>
             <li>
                 <img src="/jsicon.png" alt="JavaScript" className="skill-icon" />
