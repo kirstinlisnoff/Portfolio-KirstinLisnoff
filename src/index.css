@@ -70,6 +70,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+  background-color: var(--blue);
 }
 
 button:focus,
@@ -83,7 +84,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: var(--wisteria);
+    color: var(--pink);
   }
   button {
     background-color: #f9f9f9;

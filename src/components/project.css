@@ -1,60 +1,26 @@
-/* src/components/Project.css
-:root {
-    --pale-purple: #f3e0ec;
-    --grey-purple: #d5b6cf;
-    --mauve: #f2befc;
-    --wisteria: #ca9ce1;
-    --violet: #685f74;
-}
 
-.project {
-    background-color: var(--pale-purple);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .project-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .project-title {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: var(--violet);
-  }
-  
-  .project-links {
-    margin-top: 1rem;
-  }
-  
-  .project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: var(--wisteria);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .project-link:hover {
-    background-color: var(--mauve);
-  }
-   */
 
 
 .project {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.project-right {
+  margin-right: 5rem;
+}
+
+.project-left {
+  margin-left: 5rem;
+}
+
+
+.project-title {
+  font-size: 1.8rem;
+  font-family: "Alegreya", serif;
+  margin-bottom: 1rem;
 }
 
 .project-description {
@@ -71,18 +37,46 @@
     border-radius: 10px;
   }
 
-  .project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: var(--wisteria);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .project-link:hover {
-    background-color: var(--mauve);
-  }
+ .project-link {
+  position: relative;
+  display: inline-block;
+  background-color: var(--dark);
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.project-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue); /* fill color on hover */
+  z-index: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover::before {
+  transform: translateY(0);
+}
+
+.project-link span {
+  position: relative;
+  z-index: 1; /* ensures text stays on top of fill */
+  transition: color 0.3s ease;
+}
+
+.project-link:hover span {
+  color: #fff; /* optional: text color change when filled */
+}
+
+ 
 

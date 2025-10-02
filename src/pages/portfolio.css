@@ -1,18 +1,19 @@
 .portfolio {
-    padding-top: 6rem;
+    padding: 6rem;
     text-align: center;
+    background-color: var(--yellow);
   }
   
   .portfolio h1 {
     font-size: 20px;
-    margin: 0;
+    font-family: "Alegreya", serif;
   }
 
   .portfolio-projects {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
   }
@@ -23,10 +24,4 @@
     margin-top: 1rem;
   }
 
-  .flightplan {
-    color: green;
-  }
-
-  .forkintheroad {
-    color: blue;
-  }
+ 

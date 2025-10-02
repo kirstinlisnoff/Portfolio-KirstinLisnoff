@@ -4,7 +4,7 @@ import './project.css'
     return (
       <div className="project">
         <img src={image} alt={title} className="project-img" />
-        <div className='project-description'>
+        <div className='project-left'>
         <h3 className="project-title">{title}</h3>
         <p className="description">{description}</p>
         <div className="project-links">
@@ -12,7 +12,7 @@ import './project.css'
             View Deployed App
           </a> */}
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-            View GitHub Repo
+            <span>View GitHub Repo</span>
           </a>
           </div> 
           </div>

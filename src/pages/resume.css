@@ -23,7 +23,6 @@
   
   .resume-button {
     display: inline-block;
-    background-color: #333;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -33,7 +32,7 @@
   }
   
   .resume-button:hover {
-    background-color: var(--mauve);
+    background-color: var(--blue);
   }
   
   .resume-skills {

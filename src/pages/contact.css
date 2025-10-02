@@ -1,16 +1,10 @@
-/* contact.css */
-:root {
-    --pale-purple: #f3e0ec;
-    --grey-purple: #d5b6cf;
-    --mauve: #f2befc;
-    --wisteria: #ca9ce1;
-    --violet: #685f74;
-}
+
 /* Overall section styling */
 .contact {
     padding: 6rem 10rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--purple);
 }
 
 /* Heading styling */
@@ -69,7 +63,6 @@
 /* Button styling */
 .contact-form button {
     padding: 1rem 2rem;
-    background-color: var(--violet);
     color: white;
     border: none;
     border-radius: 8px;
@@ -79,7 +72,7 @@
 }
 
 .contact-form button:hover {
-    background-color: var(--mauve);
+    background-color: var(--blue);
 }
 
 /* Mobile responsiveness */

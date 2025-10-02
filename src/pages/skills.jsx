@@ -1,27 +1,51 @@
-
-
 import './skills.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSquareJs,
+  faReact,
+  faNodeJs,
+  faHtml5,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
-function Skills () {
-    return (
-        <div className="skills">
-        <h1>skills</h1>
-        <h2>Here are the tools and technologies I work with to bring ideas to life.</h2>
-        <ul>
-            <li>
-                <img src="/jsicon.png" alt="JavaScript" className="skill-icon" />
-            </li>
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>HTML & CSS</li>
-            <li>Node.js</li>
-            <li>PostgreSQL</li>
-            <li>Git & GitHub</li>
-            <li>Web APIs</li>
-            <li>Responsive Web Design</li>
-        </ul>
-        </div>
-    );
+import {
+  faDatabase,
+  faGear,
+  faDesktop
+} from '@fortawesome/free-solid-svg-icons';
+
+function Skills() {
+  const skills = [
+    { name: "JavaScript", icon: faSquareJs, color: "white" },
+    // { name: "TypeScript", icon: null, color: "white" }, // no official icon
+    { name: "React.js", icon: faReact, color: "white" },
+    { name: "HTML & CSS", icon: faHtml5, color: "white" },
+    { name: "Node.js", icon: faNodeJs, color: "white" },
+    { name: "PostgreSQL", icon: faDatabase, color: "white" },
+    { name: "Git & GitHub", icon: faGithub, color: "#ffffff" },
+    { name: "Web APIs", icon: faGear, color: "white" },
+    { name: "Responsive Web Design", icon: faDesktop, color: "white" },
+  ];
+
+  return (
+    <div className="skills">
+      <h1>skills</h1>
+      <h2>Here are the tools and technologies I work with to bring ideas to life.</h2>
+      <ul>
+        {skills.map((skill, index) => (
+          <li key={index}>
+            {skill.icon && (
+              <FontAwesomeIcon
+                icon={skill.icon}
+                style={{ color: skill.color, marginRight: "0.5rem" }}
+              />
+            )}
+            {skill.name}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Skills;

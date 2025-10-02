@@ -1,10 +1,13 @@
 .skills {
-  padding-top: 6rem;
+  padding: 6rem;
+  background-color: var(--orange);
+  color: white;
 }
 
 .skills h1 {
   font-size: 20px;
   margin: 0;
+  font-family: "Alegreya", serif;
 }
 
 .skills h2 {
@@ -13,25 +16,32 @@
 
 .skills ul {
   display: flex;
-  flex-wrap: wrap;       /* wrap to next line if needed */
-  gap: 0.75rem;          /* space between boxes */
+  flex-wrap: wrap;  
+  justify-content: center;     /* wrap to next line if needed */
+  gap: 1rem;          /* space between boxes */
   list-style: none;      /* remove bullets */
   padding: 0;
-  margin: 0;
+  margin-top: 3rem;
 }
 
 .skills li {
-  background-color: var(--wisteria);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
 }
 
 .skills li:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-5px); /* subtle lift on hover */          /* optional: text highlight on hover */
+}
+
+.skills li svg {
+  font-size: 6rem;               /* icon size */
+  transition: transform 0.3s ease;
+}
+
+.skills li:hover svg {
+  transform: scale(1.2);         /* slightly grow icon on hover */
 }
