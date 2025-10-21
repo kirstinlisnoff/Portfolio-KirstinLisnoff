@@ -1,6 +1,16 @@
 import './about.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
 
 function About() {
+  const socials = [
+    { name: "Git & GitHub", icon: faGithub, color: "#192F39", link: "https://github.com/kirstinlisnoff" },
+    { name: "LinkedIn", icon: faLinkedinIn, color: "#192F39", link: "https://www.linkedin.com/in/kirstin-lisnoff-9792452b6/" },
+  ];
+
     return (
         <section className="about">
             <h1>about</h1>
@@ -10,7 +20,7 @@ function About() {
                 <img src="/avatar.jpg" alt="Kirstin Lisnoff" className="about-img"/>
                   <div className='social-icons'>
                     <ul>
-                      <li>
+                      {/* <li>
                         <a href="https://www.linkedin.com/in/kirstin-lisnoff-3b4b9820b/" target="_blank" rel="noopener noreferrer">
                             <img src="/linkedinicon.png" alt="LinkedIn" className="social-icon" />
                         </a>
@@ -19,7 +29,24 @@ function About() {
                         <a href="https://github.com/kirstinlisnoff" target="_blank" rel="noopener noreferrer">
                             <img src="/githubicon.png" alt="GitHub" className="social-icon" />
                         </a>
-                      </li>
+                      </li> */}
+                      {socials.map((social, index) => (
+                        <li key={index}>
+                          {social.icon && (
+                            <a
+                              href={social.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                            <FontAwesomeIcon
+                              icon={social.icon}
+                              style={{ color: social.color, marginRight: "0.5rem" }}
+                            />
+                            </a>
+                          )}
+                        
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </div>

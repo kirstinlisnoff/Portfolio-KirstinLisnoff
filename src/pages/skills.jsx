@@ -22,7 +22,7 @@ function Skills() {
     { name: "HTML & CSS", icon: faHtml5, color: "white" },
     { name: "Node.js", icon: faNodeJs, color: "white" },
     { name: "PostgreSQL", icon: faDatabase, color: "white" },
-    { name: "Git & GitHub", icon: faGithub, color: "#ffffff" },
+    { name: "Git & GitHub", icon: faGithub, color: "white" },
     { name: "Web APIs", icon: faGear, color: "white" },
     { name: "Responsive Web Design", icon: faDesktop, color: "white" },
   ];
