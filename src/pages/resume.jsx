@@ -9,7 +9,7 @@ function Resume() {
       <div className="resume-download">
   
         <a 
-          href="././public/resume.pdf"
+          href="/resume.pdf"
           download="Kirstin_Lisnoff_Resume.pdf"
           className="resume-button"
         >
