@@ -1,45 +1,62 @@
-:root {
-    --pale-purple: #f3e0ec;
-    --grey-purple: #d5b6cf;
-    --mauve: #f2befc;
-    --wisteria: #ca9ce1;
-    --violet: #685f74;
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 1rem;
 }
 
-.footer {
-    background-color: var(--grey-purple);
-    color: white;
+.footer-container {
+  max-width: 100%;
+  margin: auto;           /* centers container in page */
+  display: flex;
+  flex-direction: row;      /* h1 and content in a row */
+  align-items: center;
+  justify-content: center; /* align items to top */
+  gap: 2rem;                /* space between h1 and content */         /* ensures consistent side padding */
+  box-sizing: border-box;
+  flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+.footer-container h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Alegreya", serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;   /* stack paragraph and icons */
+  gap: 5px;   
+  font-size: 1rem;           /* space between paragraph and icons */
+}
+
+p {
+  margin: 0;
+}
+
+.social-icons ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Social icon hover effect */
+.social-icons li:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;  /* stack h1 above content */
+    align-items: center;     /* center everything */
     text-align: center;
-    padding: 2rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    width: 95%;              /* keep some padding on sides */
   }
-  
-  .social-links {
+
+  .footer-container h1 {
     margin-bottom: 1rem;
   }
-  
-  .social-links a {
-    color: white;
-    font-size: 2rem;
-    margin: 0 1rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    color:var(--mauve);
-  }
-  
-  footer p {
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .social-links a {
-      font-size: 1.5rem;
-    }
-  }
+}
