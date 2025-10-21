@@ -5,6 +5,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--purple);
+    color: white;
 }
 
 /* Heading styling */
@@ -76,6 +77,27 @@
 .contact-form button:hover {
     background-color: var(--blue);
 }
+
+.success-message {
+  margin: 1rem 0;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
