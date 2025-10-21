@@ -5,16 +5,18 @@ function Contact() {
         <section className="contact">
             <h1>contact</h1>
             <h2>I'd love to hear from you! Fill out the form below to reach out.</h2>
-            <form className="contact-form">
-                <div className="form-content">
-                <input type="text" placeholder="Name" required />
-                </div>
-                <div className="form-content">
-                <input type="email" placeholder="Email" required />
-                </div>
-                <div className="form-message">
-                <textarea placeholder="Message" required />
-                </div>
+            <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                className="contact-form"
+                >
+                {/* Hidden field for Netlify form recognition */}
+                <input type="hidden" name="form-name" value="contact" />
+
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">Get in touch</button>
                 
             </form>
