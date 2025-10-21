@@ -18,14 +18,11 @@
 /* Form styling */
 .contact-form {
     max-width: 800px;
-    background-color: var(--wisteria);
-    padding: 2rem 5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
-.contact-form .form-content {
-    margin-bottom: 1.5rem;
+.form-content {
     align-items: center;
     text-align: left;
     vertical-align: top;
@@ -35,7 +32,6 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
-    color: white;
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -48,6 +44,8 @@
     box-sizing: border-box;
     border-radius: 8px;
     font-size: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form textarea {
@@ -56,11 +54,6 @@
     font-family: inherit;
     margin-bottom: 1rem;
 }
-
-
-
-
-
 
 
 /* Button styling */
@@ -75,11 +68,11 @@
 }
 
 .contact-form button:hover {
-    background-color: var(--blue);
+    background-color: var(--dark);
 }
 
 .success-message {
-  margin: 1rem 0;
+  margin:  0;
   padding: 1rem;
   color: white;
   border-radius: 5px;
