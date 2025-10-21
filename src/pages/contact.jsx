@@ -8,18 +8,20 @@ function Contact() {
             <form 
                 name="contact" 
                 method="POST" 
-                data-netlify="true" 
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 className="contact-form"
                 >
-                {/* Hidden field for Netlify form recognition */}
+                 <input type="hidden" name="form-name" value="contact" />
+                 <p style={{ display: "none" }}>
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                  </p>        
                 <input type="hidden" name="form-name" value="contact" />
-
                 <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="email" placeholder="Email" required />
                 <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Get in touch</button>
-                
-            </form>
+                <button type="submit">Send</button>
+                </form>
         </section>
     );
 }
