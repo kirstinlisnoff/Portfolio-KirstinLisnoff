@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-function Nav() {
+function Nav({ menuOpen }) {
     return (
     
-    <nav className="navbar">
+    <div className="navbar">
+     <nav className={menuOpen ? "open" : ""}>
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
@@ -12,8 +13,8 @@ function Nav() {
             <li><a href="#contact">contact</a></li>
             <li><a href="#resume">resume</a></li>   
         </ul>
-        
      </nav>
+     </div>
     );
 }
 

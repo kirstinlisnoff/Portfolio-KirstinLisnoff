@@ -24,6 +24,8 @@
 
 }
 
+/* ---------- FONTS ---------- */
+
 .alegreya {
   font-family: "Alegreya", serif;
   font-weight: 400;
@@ -36,6 +38,8 @@
   font-style: normal;
 }
 
+
+/* ---------- BASE ---------- */
 
 html {
   scroll-behavior: smooth;
@@ -78,15 +82,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* ---------- IMAGES / VIDEOS ---------- */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 @media (max-width: 768px) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  body {
+    flex-direction: column; /* stack elements vertically */
+    min-height: auto;        /* let content determine height */
   }
-  a:hover {
-    color: var(--pink);
+
+  h1 {
+    font-size: 2em;         /* smaller headline on small screens */
+    text-align: center;
   }
+
   button {
-    background-color: #f9f9f9;
+    width: 100%;            /* buttons take full width on small screens */
+    padding: 0.8em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;       /* even smaller for phones */
+  }
+
+  body {
+    max-width: 100%;;
   }
 }

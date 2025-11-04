@@ -25,3 +25,34 @@
   }
 
  
+/* Tablet */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 4rem 2rem;
+  }
+  .portfolio h1 {
+    font-size: 1.6rem;
+  }
+  .portfolio h2 {
+    font-size: 2rem;
+  }
+  .portfolio-projects {
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+  .portfolio h1 {
+    font-size: 1.4rem;
+  }
+  .portfolio h2 {
+    font-size: 1.6rem;
+  }
+  .portfolio-projects {
+    gap: 1.5rem;
+  }
+}

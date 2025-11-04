@@ -28,7 +28,7 @@ import { useRef } from 'react';
             <h3 className="project-title">{title}</h3>
             <p className="description">{description}</p>
             <div className="project-links">
-              \
+              
               <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
                 <span>View GitHub Repo</span>
               </a>

@@ -103,3 +103,47 @@
   opacity: 0;
 }
 
+
+/* ---------- TABLET (≤768px) ---------- */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .project-media {
+    height: 250px;
+  }
+
+  .project-right {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* ---------- MOBILE / IPHONE (≤480px) ---------- */
+@media (max-width: 480px) {
+  .project {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .project-left {
+    order: -1;
+  }
+  .project-media {
+    height: 200px; /* smaller media */
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+}
