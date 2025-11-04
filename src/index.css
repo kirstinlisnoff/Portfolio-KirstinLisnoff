@@ -82,13 +82,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* ---------- IMAGES / VIDEOS ---------- */
-img,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 
 @media (max-width: 768px) {
