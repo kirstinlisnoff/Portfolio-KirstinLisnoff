@@ -28,7 +28,7 @@ function Project({ title, image, video, description, githubLink }) {
             loop
             muted
             playsInline
-            preload='none'
+            preload='auto'
             >
               <source src={video} type='video/mp4'/>
             </video>
